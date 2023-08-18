@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Adjusted to a column layout */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(90deg, #05aa05, #FFFF00);
+    /* You can adjust the degree (90deg) and the color codes (#05aa05 and #FFFF00) to your preference */
+  }
+  
+  .container {
+    background-color: white;
+    border-radius: 20px; /* Adjust the border radius as needed */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    padding: 20px;
+    max-width: 600px; /* Set the maximum width of the container */
+    width: 90%; /* Set the width of the container */
+    text-align: center;
+    margin-top: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .container.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  h1 {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    margin-top: 60px; /* Adjust the margin to separate the title from the search form */
+    margin-bottom: 100px; /* Adjust the margin as needed */
+  }
+
+  form {
+    margin: 0;
+    padding: 0;
+    /* height: 0vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    color: white;
+    margin-top: 100px;
+  }
+
+
+  .animated-search-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 300px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: max-width 0.3s ease, padding 0.3s ease, transform 0.3s ease; /* Added transform to the transition */
+  }
+  
+  .animated-search-form:hover {
+    max-width: 350px; /* Expanded width on hover */
+    padding: 10px; /* Add padding during animation */
+    transform: translateY(10px); /* Move form 10px down on hover */
+  }
+  
+  
+  #location-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #fff;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  #location-input::placeholder {
+    color: #aaa;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  #weather-info {
+    text-align: center;
+    margin-top: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  #weather-info.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  #weather-info h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-family: Arial, sans-serif;
+    color: black;
+  }
+  
+  #weather-info p {
+    margin: 10px 0;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    color: black;
+  }
+  
+
+  
+  
+
+  

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css">
+
+
+
+
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Weather Forecast</h1>
+    </header>
+
+    <main>
+      <form id="search-form" class="animated-search-form">
+        <input type="text" id="location-input" placeholder="Enter location" />
+        <datalist id="dropdown"></datalist> <!-- Add the dropdown datalist element -->
+        <button type="submit">Search</button>
+      </form>
+
+      <div id="weather-info" class="container">
+        <!-- Weather information will be displayed here -->
+      </div>
+    </main>
+
+    <script src="weather.js"></script>
+  </body>
+</html>
